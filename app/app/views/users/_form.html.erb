@@ -23,17 +23,12 @@
 
   <div>
     <%= form.label :role, style: "display: block" %>
-    <%= form.number_field :role %>
+    <%= form.select :role, User.roles.keys %> <!--Added to select only enum keys-->
   </div>
 
   <div>
     <%= form.label :active, style: "display: block" %>
-    <%= form.text_field :active %>
-  </div>
-
-  <div>
-    <%= form.label :boolean, style: "display: block" %>
-    <%= form.text_field :boolean %>
+    <%= form.check_box :active %>
   </div>
 
   <div>

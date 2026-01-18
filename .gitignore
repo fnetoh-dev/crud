@@ -11,11 +11,17 @@
 /.env*
 !/.env*.erb
 
-# Ignore all logfiles and tempfiles.
+# Rails - ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+
+# Rails app inside /app
+/app/log/*
+/app/tmp/*
+!/app/log/.keep
+!/app/tmp/.keep
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
